@@ -11,7 +11,7 @@ class UserController {
             user.google_id = "";
         }
         if(!user.greenhouses_id){
-            user.greenhouses_id = []
+            user.greenhouses_id = [];
         }
         const createdUserId = await userModel.create(user);
         return createdUserId;
